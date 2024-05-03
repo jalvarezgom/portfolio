@@ -1,0 +1,26 @@
+$font-weights: (
+  'regular': ("Verdana", 400),
+  'bold': ("Verdana", 700),
+);
+
+$font-sizes: (
+  '10': 0.625em,
+  '14': 0.875em,
+  '16': 1em,
+  '18': 1.125em,
+  '20': 1.25em,
+  '24': 1.5em,
+);
+
+@each $key, $value in $font-sizes {
+  .text-#{$key} {
+    font-size: $value;
+  }
+}
+
+@each $key, $value in $font-weights {
+  .text-#{$key} {
+    font-family: nth($value, 1);
+    font-weight: nth($value, 2);
+  }
+}

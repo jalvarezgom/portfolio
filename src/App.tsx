@@ -1,7 +1,10 @@
+import './assets/styles/main.scss'
+
+
 function App() {
   return (
     <>
-      hola
+      <h1>assdadasdadwqeqwdas</h1>
     </>
   )
 }

@@ -1,0 +1,21 @@
+$rounded-size: 3rem;
+
+.rounded-container {
+  border-radius: $rounded-size;
+}
+
+.rounded-container-top {
+  border-radius: $rounded-size $rounded-size 0 0;
+}
+
+.rounded-container-bot {
+  border-radius: 0 0 $rounded-size $rounded-size;
+}
+
+.rounded-container-left {
+  border-radius: $rounded-size 0 0 $rounded-size;
+}
+
+.rounded-container-right {
+  border-radius: 0 $rounded-size $rounded-size 0;
+}

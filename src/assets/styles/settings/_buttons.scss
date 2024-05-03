@@ -1,0 +1,23 @@
+@use './variables.scss';
+@use '../general/round' as v;
+
+.btn{
+  display: inline-flex; 
+  padding: 1rem 2rem;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  background-color: #{variables.$color-primary};
+}
+
+.btn--rounded{
+  @extend .rounded-container;
+}
+
+.btn--rounded-left{
+  @extend .rounded-container-left;
+}
+
+.btn--rounded-right{
+  @extend .rounded-container-right;
+}

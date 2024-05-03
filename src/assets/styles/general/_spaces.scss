@@ -1,0 +1,168 @@
+$margin-em-sizes: (
+  '05': .5em,
+  '1': 1em,
+  '15': 1.5em,
+  '2': 2em,
+  '3': 3em,
+);
+
+@each $name, $value in $margin-em-sizes {
+  .m-#{$name}em {
+    margin: $value;
+  }
+  .mt-#{$name}em {
+    margin-top: $value;
+  }
+
+  .mb-#{$name}em {
+    margin-bottom: $value;
+  }
+
+  .mr-#{$name}em {
+    margin-right: $value;
+  }
+
+  .ml-#{$name}em {
+    margin-left: $value;
+  }
+}
+
+;
+
+$margin-vh-sizes: (
+  '10': 10vh,
+  '15': 15vh,
+  '20': 20vh,
+  '30': 30vh,
+  '40': 40vh,
+);
+
+@each $name, $value in $margin-vh-sizes {
+  .m-#{$name}vh {
+    margin: $value;
+  }
+
+  .mt-#{$name}vh {
+    margin-top: $value;
+  }
+
+  .mb-#{$name}vh {
+    margin-bottom: $value;
+  }
+
+  .mr-#{$name}vh {
+    margin-right: $value;
+  }
+
+  .ml-#{$name}vh {
+    margin-left: $value;
+  }
+}
+
+;
+
+$padding-em-sizes: (
+  '05': .5em,
+  '1': 1em,
+  '2': 2em,
+  '3': 3em,
+  '4': 4em,
+  '5': 5em,
+  '6': 6em,
+);
+
+@each $name, $value in $padding-em-sizes {
+  .p-#{$name}em {
+    padding: $value;
+  }
+  
+  .pt-#{$name}em {
+    padding-top: $value;
+  }
+
+  .pb-#{$name}em {
+    padding-bottom: $value;
+  }
+
+  .pr-#{$name}em {
+    padding-right: $value;
+  }
+
+  .pl-#{$name}em {
+    padding-left: $value;
+  }
+}
+
+$padding-px-sizes: (
+  '12': 12px,
+  '24': 24px,
+  '36': 36px,
+);
+
+@each $name, $value in $padding-px-sizes {
+  .p-#{$name}px {
+    padding: $value;
+  }
+  
+  .pt-#{$name}px {
+    padding-top: $value;
+  }
+
+  .pb-#{$name}px {
+    padding-bottom: $value;
+  }
+
+  .pr-#{$name}px {
+    padding-right: $value;
+  }
+
+  .pl-#{$name}px {
+    padding-left: $value;
+  }
+
+  .pbt-#{$name}px {
+    padding: $value 0;
+  }
+
+  .prl-#{$name}px {
+    padding: 0 $value;
+  }
+}
+
+$height-sizes: (
+  '10': 10vh,
+  '20': 20vh,
+  '30': 30vh,
+  '40': 40vh,
+  '50': 50vh,
+  '60': 60vh,
+  '70': 70vh,
+  '80': 80vh,
+  '90': 90vh,
+  '100': 100vh,
+);
+
+@each $name, $value in $height-sizes {
+  .h-#{$name} {
+    height: $value;
+  }
+}
+
+$width-sizes: (
+  '10': 10vw,
+  '20': 20vw,
+  '30': 30vw,
+  '40': 40vw,
+  '50': 50vw,
+  '60': 60vw,
+  '70': 70vw,
+  '80': 80vw,
+  '90': 90vw,
+  '100': 100vw,
+);
+
+@each $name, $value in $width-sizes {
+  .w-#{$name} {
+    width: $value;
+  }
+}

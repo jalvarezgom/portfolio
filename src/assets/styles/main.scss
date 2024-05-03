@@ -1,0 +1,23 @@
+@use './general/normalize';
+@use './general/simple-grid';
+@use './general/round';
+@use './general/spaces';
+@use './settings/variables';
+
+:root{
+  @extend .text-regular;
+  font-size: 16px !important;
+}
+
+#root{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+

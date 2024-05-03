@@ -1,0 +1,27 @@
+$color-primary: #f75c03;
+$color-primary-dark: #760E00;
+$color-primary-soft: #FEEBCC;
+
+$color-light: #fbfbff;
+$color-gray: #747B80;
+$color-dark: #111414;
+
+
+$colors: (
+  "primary": $color-primary,
+  "primary-dark": $color-primary-dark,
+  "primary-soft": $color-primary-soft,
+  "light": $color-light,
+  "gray": $color-gray,
+  "dark": $color-dark,
+);
+
+@each $color, $value in $colors {
+  .bg-#{$color} {
+    background-color: $value;
+  }
+
+  .text-color-#{$color} {
+    color: $value;
+  }
+}
